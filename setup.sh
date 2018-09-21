@@ -23,16 +23,13 @@ EOL
 cat > profile <<EOL
 clear
 echo -ne "Today is "; date
-echo -e ""; cal ; -e "";
+echo -e ""; cal ; echo -e "";
 EOL
 # Add welcome message containing date and calendar
 
 defaults write com.apple.finder AppleShowAllFiles -bool TRUE
 killall Finder
 # Show hidden files and folders in Finder
-
-
-
 
 source profile
 # Make changes available
