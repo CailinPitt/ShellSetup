@@ -8,6 +8,9 @@ fi
 echo "alias ll="\""ls -l -a"\""" >> profile
 # Add ll command
 
+echo "alias weather="\""curl http://wttr.in/Cincinnati"\""" >> profile
+# Add weather command
+
 cat > profile <<EOL
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
